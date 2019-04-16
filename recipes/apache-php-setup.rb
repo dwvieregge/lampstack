@@ -5,7 +5,7 @@ package 'httpd' do
 end
 
 execute "php-install" do
-  command "sudo yum install -y php71 php71-mysqlnd"
+  command "sudo amazon-linux-extras install -y php7.2"
   action :run
 end
 

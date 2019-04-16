@@ -1,4 +1,4 @@
-# Install PHP 7.1
+# Install PHP 7.2
 
 # Remove the old PHP
 execute "php-uninstall" do
@@ -6,9 +6,9 @@ execute "php-uninstall" do
   action :run
 end
 
-# Install PHP 7.1 and some of the most common PHP modules
-execute "php-7-1-install" do
-  command "sudo yum install -y php71"
+# Install PHP 7.2 and some of the most common PHP modules
+execute "php-7-2-install" do
+  command "sudo amazon-linux-extras install -y php7.2"
   action :run
 end
 
