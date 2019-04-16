@@ -5,7 +5,7 @@
 ##end
 
 execute "httpd-install" do
-  command "sudo yum install -y httpd24"
+  command "sudo yum install -y httpd"
   action :run
 end
 
