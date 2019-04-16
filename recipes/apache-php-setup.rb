@@ -1,12 +1,7 @@
 ## apache and php setup
 
-action :create do
-  package 'httpd'
-
-  package 'httpd' do
-      action :install
-  end
-
+package 'httpd' do
+  action :install
 end
 
 package "php" do
