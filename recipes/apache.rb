@@ -10,7 +10,7 @@ end
 
 # Virtual Hosts Files
 
-node["lamp_stack"]["sites"].each do |sitename, data|
+node["lampstack_1"]["sites"].each do |sitename, data|
   document_root = "/var/www/html/#{sitename}"
 
   directory document_root do
