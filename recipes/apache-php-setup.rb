@@ -19,7 +19,7 @@ end
 cookbook_file "/etc/php/7.0/cli/php.ini" do
   source "php.ini"
   mode "0644"
-  notifies :restart, "service[httpd]"
+  ##notifies :restart, "service[httpd]"
 end
 
 execute "chownlog" do
