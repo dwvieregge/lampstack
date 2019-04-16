@@ -1,1 +1,1 @@
-default["lampstack_1"]["sites"]["dvieregge.com"] = { "port" => 80, "servername" => "dvieregge.com", "serveradmin" => "david.vieregge@icloud.com" }
+default["lampstack"]["sites"]["dvieregge.com"] = { "port" => 80, "servername" => "dvieregge.com", "serveradmin" => "david.vieregge@icloud.com" }

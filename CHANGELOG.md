@@ -1,6 +1,6 @@
-# lamp_stack CHANGELOG
+# lampstack CHANGELOG
 
-This file is used to list changes made in each version of the lamp_stack cookbook.
+This file is used to list changes made in each version of the lampstack cookbook.
 
 # 0.1.0
 

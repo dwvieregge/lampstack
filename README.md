@@ -1,4 +1,4 @@
-# lamp_stack
+# lampstack
 
 TODO: Enter the cookbook description here.
 
