@@ -1,6 +1,12 @@
+## apache and php setup
 
-package 'httpd' do
-    action :install
+action :create do
+  package 'httpd'
+
+  package 'httpd' do
+      action :install
+  end
+
 end
 
 package "php" do
@@ -18,7 +24,7 @@ end
 cookbook_file "/etc/php/7.0/cli/php.ini" do
   source "php.ini"
   mode "0644"
-  notifies :restart, "service[apache2]"
+  notifies :restart, "service[httpd]"
 end
 
 execute "chownlog" do
