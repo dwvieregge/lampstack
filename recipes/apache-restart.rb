@@ -1,6 +1,6 @@
 # Restart Apache
 
-execute "httpd-start" do
+execute "httpd-restart" do
   command "sudo /sbin/httpd -k restart"
   action :run
 end

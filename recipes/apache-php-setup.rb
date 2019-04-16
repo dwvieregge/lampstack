@@ -27,7 +27,7 @@ end
 cookbook_file "/etc/php/7.0/cli/php.ini" do
   source "php.ini"
   mode "0644"
-  notifies :restart, "service[httpd]"
+  notifies :restart, "execute[httpd-restart]"
 end
 
 execute "chownlog" do
@@ -38,4 +38,9 @@ end
 directory "/var/log/php" do
   action :create
   notifies :run, "execute[chownlog]"
+end
+
+execute "httpd-restart" do
+  command "sudo /sbin/httpd -k restart"
+  action :run
 end
