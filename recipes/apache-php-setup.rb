@@ -17,7 +17,7 @@ package "php-mysql" do
 end
 
 %w[ /etc/php /etc/php/7.0 /etc/php/7.0/cli ].each do |path|
-  not_if { ::File.exist?('/etc/php/7.0/cli/php.ini') }
+  ##not_if { ::File.exist?("/etc/php/7.0/cli/php.ini") }
   directory path do
     owner 'root'
     group 'root'
