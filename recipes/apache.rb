@@ -1,10 +1,10 @@
 # Install & Enable Apache
 
-package "apache2" do
+package "httpd24" do
   action :install
 end
 
-service "apache2" do
+service "httpd24" do
   action [:enable, :start]
 end
 

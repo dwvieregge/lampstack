@@ -1,6 +1,6 @@
 name 'lampstack'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'David Vieregge'
+maintainer_email 'david.vieregge@icloud.com'
 license 'All Rights Reserved'
 description 'Installs/Configures lampstack'
 long_description 'Installs/Configures lampstack'
