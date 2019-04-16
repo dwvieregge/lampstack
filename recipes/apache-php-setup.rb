@@ -4,7 +4,7 @@ package 'httpd' do
   action :install
 end
 
-package "php" do
+package "php71" do
   action :install
 end
 
