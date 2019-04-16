@@ -16,12 +16,13 @@ package "php-mysql" do
   action :install
 end
 
-%w[ /etc /etc/php /etc/php/7.0 /etc/php/7.0/cli ].each do |path|
+%w[ /etc/php /etc/php/7.0 /etc/php/7.0/cli ].each do |path|
   directory path do
     owner 'root'
     group 'root'
     mode '0755'
   end
+  not_if { ::File.exist?('/etc/php/7.0/cli/php.ini') }
 end
 
 cookbook_file "/etc/php/7.0/cli/php.ini" do
