@@ -1,3 +1,8 @@
+
+service 'httpd' do
+    action :install
+end
+
 package "php" do
   action :install
 end
