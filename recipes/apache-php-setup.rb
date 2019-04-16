@@ -27,11 +27,11 @@ end
 cookbook_file "/etc/php/7.0/cli/php.ini" do
   source "php.ini"
   mode "0644"
-  notifies :restart, "execute[httpd-restart]"
+  notifies :run, "execute[httpd-restart]"
 end
 
 execute "chownlog" do
-  command "chown www-data /var/log/php"
+  command "chown ec2-user /var/log/php"
   action :nothing
 end
 
